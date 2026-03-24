@@ -1,0 +1,63 @@
+import java.util.Scanner;
+
+public class Main {
+	public static void main (String [] args) {
+		Scanner sc = new Scanner (System.in);
+		int codigo = 0;
+		int cachorro = 0;
+		int xsalada = 0;
+		int xbacon =0;
+		int refri = 0;
+		double precoCachorro = 5.00;
+		double precoXsalada = 8.00;
+		double precoXBacon = 10.00;
+		double precoRefrigerante = 4.00;
+		double totalgeral = 0;
+		while (codigo !=5) {
+			System.out.println("Bem Vindo");
+			System.out.println("Menu:");
+			System.out.println("1 : Cachorro quente");
+			System.out.println("2 : X-Salada");
+			System.out.println("3: X-Bacon");
+			System.out.println("4: Refrigerante");
+			System.out.println("5: FIM");
+			System.out.println("Escolha um dos números acima:");
+			codigo = sc.nextInt();
+			int quantidade=0;
+			if (codigo == 1) {
+				System.out.println("Qual a quantidade?");
+				quantidade = sc.nextInt();
+				totalgeral += quantidade * precoCachorro;
+				cachorro += quantidade;
+			}
+			else if (codigo == 2) {
+				System.out.println("Qual a quantidade?");
+				quantidade = sc.nextInt();
+				totalgeral += quantidade * precoXsalada;
+				xsalada += quantidade;
+			}
+			else if (codigo == 3) {
+				System.out.println("Qual a quantidade?");
+				quantidade = sc.nextInt();
+				totalgeral += quantidade * precoXBacon;
+				xbacon += quantidade;
+			}
+			else if (codigo == 4) {
+				System.out.println("Qual a quantidade?");
+				quantidade = sc.nextInt();
+				totalgeral += quantidade * precoRefrigerante;
+				refri += quantidade;
+			}
+			else if (codigo != 5) {
+				System.out.println("Código Inválido");
+			}
+			
+		}
+				System.out.println("MUITO OBRIGADO");
+				System.out.println("Cachorro-Quente:" + cachorro+"Unidades");
+				System.out.println("X-Salada:" + xsalada + " Unidades");
+				System.out.println("X-Bacon: " + xbacon + " Unidades");
+				System.out.println("Refrigerante:" + refri + " Unidades");
+				System.out.println("Total: R$ " + totalgeral);
+				sc.close();
+}}
