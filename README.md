@@ -4,18 +4,20 @@
 
 ## Projetos ##
 POSTO DE COMBÚSTIVEL
+
 Um sistema simples que registra abastecimentos e calcula:
 - Quantidade de clientes por tipo de combustível
 - Litros abastecidos
 - Valor total
 
-LANCHONETE
+##LANCHONETE##
+
 Um sistema de pedidos com menu interativo:
 - Escolha de produtos
 - Entrada de quantidade
 - Cálculo do valor total do pedido
 
-O QUE ESTOU PRATICANDO?
+##O QUE ESTOU PRATICANDO?##
 
 - Estruturas de repetição (while)
 - Condicionais (if / else)
@@ -23,6 +25,6 @@ O QUE ESTOU PRATICANDO?
 - Acumulação de valores
 - Organização de lógica
 
-OBJETIVO
+##OBJETIVO##
 
 Evoluir na área de desenvolvimento, melhorar minha lógica e construir projetos cada vez mais completos.
