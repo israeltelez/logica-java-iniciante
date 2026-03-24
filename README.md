@@ -10,14 +10,14 @@ Um sistema simples que registra abastecimentos e calcula:
 - Litros abastecidos
 - Valor total
 
-##LANCHONETE##
+LANCHONETE
 
 Um sistema de pedidos com menu interativo:
 - Escolha de produtos
 - Entrada de quantidade
 - Cálculo do valor total do pedido
 
-##O QUE ESTOU PRATICANDO?##
+## O QUE ESTOU PRATICANDO? ##
 
 - Estruturas de repetição (while)
 - Condicionais (if / else)
