@@ -1,0 +1,72 @@
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int gasolinaclientes = 0;
+		int alcoolclientes = 0;
+		int dieselclientes = 0;
+		double litrogasolina = 0;
+		double litroalcool = 0;
+		double litrodiesel = 0;
+		double totalgeral = 0;
+		double precoGasolina = 5.80;
+		double precoAlcool = 4.90;
+		double precoDiesel = 6.10;
+		int codigo = 0;
+
+
+		while (codigo != 4) {
+			System.out.println("========== POSTO DE GASOLINA ==========");
+			System.out.println("Bem vindo! ");
+			System.out.print("Digite uma opção: ");
+			System.out.println("1 - Álcool");
+			System.out.println("2 - Gasolina");
+			System.out.println("3 - Diesel");
+			System.out.println("4 - Fim");
+			System.out.print("Digite uma opção: ");
+			codigo = sc.nextInt();
+			double litros;
+			if (codigo == 1) {
+				alcoolclientes = alcoolclientes + 1;
+				System.out.println("Quantos litros de Álcool? ");
+				litros = sc.nextDouble();
+				litroalcool += litros;
+				totalgeral += litros * precoAlcool;
+			} else if (codigo == 2) {
+				gasolinaclientes = gasolinaclientes + 1;
+				System.out.println("Quantos litros de gasolina? ");
+				litros = sc.nextDouble();
+				litrogasolina += litros;
+				totalgeral += litros * precoGasolina;
+			} else if (codigo == 3) {
+				dieselclientes = dieselclientes + 1;
+				System.out.println("Quantos litros de Diesel?");
+				litros = sc.nextDouble();
+				litrodiesel += litros;
+				totalgeral += litros * precoDiesel;
+			} else {
+				System.out.println("Código Inválido");
+			}
+			
+		}
+		System.out.println("MUITO OBRIGADO");
+
+		System.out.println("Alcool:");
+		System.out.println("Clientes: " + alcoolclientes);
+		System.out.println("Litros: " + litroalcool);
+		System.out.println("Valor: " + litroalcool * precoAlcool);
+		System.out.println("Gasolina:");
+		System.out.println("Clientes: " + gasolinaclientes);
+		System.out.println("Litros: " + litrogasolina);
+		System.out.println("Valor: " + litrogasolina * precoGasolina);
+		System.out.println("Diesel:");
+		System.out.println("Clientes: " + dieselclientes);
+		System.out.println("Litros: " + litrodiesel);
+		System.out.println("Valor: " + litrodiesel * precoDiesel);
+		
+		System.out.println("Total geral: " + totalgeral);
+		
+		sc.close();
+	}
+}
