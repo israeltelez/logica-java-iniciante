@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class Main {
+	public static void main (String [] args) {
+		Scanner sc = new Scanner (System.in);
+		int x = sc.nextInt(); 
+		for (int i=1; i<=x; i++) {  // i começa em 1, vai até o X inserido pelo scanner, e  i++ vai acrescentando de um em um
+			if ( i % 2 != 0) { //se o resto da divisão for diferente de 0 = ímpar
+			
+			System.out.println(i);
+			}
+		}
+		sc.close();
+}}
