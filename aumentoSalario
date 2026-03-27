@@ -1,0 +1,24 @@
+import java.util.Scanner;
+import java.util.Locale;
+
+public class Main {
+    public static void main(String[] args) {
+        Locale.setDefault(Locale.US);
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Qual o seu salário?");
+        
+        String entrada = sc.next(); // lê como texto
+        entrada = entrada.replace(",", "."); // troca vírgula por ponto
+        
+        double salario = Double.parseDouble(entrada); // converte pra número
+
+        double novosalario = (salario < 2000.00) 
+            ? salario * 1.10 
+            : salario * 1.05;
+
+        System.out.printf("Seu novo salário é: %.2f%n", novosalario);
+
+        sc.close();
+    }
+}
